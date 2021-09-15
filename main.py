@@ -1,16 +1,23 @@
-# This is a sample Python script.
+##PJ Frost
+##Programming Assignment 2
+##09/14/2021
+##SEC.207
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def three_things():
+    print("Enter your name:")
+    name = input()
+    print(name)
+    print()
 
+    print("Enter a number:")
+    number = input()
+    number = float(number)
+    number = number * number
+    print(number)
+    print()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    print("Enter a word to have letters counted:")
+    words = input()
+    print(len(words))
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('Hello there!!!!')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+three_things()
