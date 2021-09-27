@@ -1,23 +1,42 @@
 ##PJ Frost
-##Programming Assignment 2
-##09/14/2021
+##Programming Assignment 3
+##09/26/2021
 ##SEC.207
+import random
 
-def three_things():
-    print("Enter your name:")
-    name = input()
-    print(name)
-    print()
+choice = input("Press 1 for Coin Flip or 2 for Art: ")
+choice = int(choice)
 
-    print("Enter a number:")
-    number = input()
-    number = float(number)
-    number = number * number
-    print(number)
-    print()
+if (choice == 1):
+    def coin_flip():
+        number = input("1 or 0? ")
+        number = int(number)
+        coin = random.randint(0,1)
+        if (coin == number):
+            print("You win!")
+        else:
+            print("You lose!")
 
-    print("Enter a word to have letters counted:")
-    words = input()
-    print(len(words))
 
-three_things()
+    coin_flip()
+
+if (choice == 2):
+    def art():
+        array = [[' ', '_', ' ', ' ', '_', ' '],
+                 ['|', '^', '|', '|', '^', '|'],
+                 ['|', ' ', '|', '|', ' ', '|'],
+                 [' ', '-', ' ', ' ', '-', ' '],
+                 [' ', ' ', ' ', ' ', ' ', ' '],
+                 ['|', ' ', ' ', ' ', ' ', '|'],
+                 ['|', ' ', ' ', ' ', ' ', '|'],
+                 [' ', '|', ' ', ' ', '|', ' '],
+                 [' ', ' ', '-', '-', ' ', ' ']]
+
+        for art1 in array:
+            for art2 in art1:
+                print(art2, end=" ")
+            print()
+
+
+    art()
+
