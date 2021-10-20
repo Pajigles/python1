@@ -1,14 +1,17 @@
 ##PJ Frost
-##Programming Assignment 5 (hashlib)
+##Programming Assignment 5 (getpass)
 ##10/19/2021
 ##SEC.207
-import hashlib
+import getpass
 
-def hash256(plaintext):
-    hash = hashlib.sha256(plaintext.encode())
-    sha256 = hash.hexdigest()
-    print(sha256)
+def createfile(filename):
+    username = getpass.getuser()
+    file = open(f'C:\\Users\\{username}\\Desktop\\PC {filename}.txt','w')
+    text = input("Enter information into the file: ")
+    file.write(text)
+    file.close()
+
 
 if __name__ == '__main__':
-    plaintext = input("Enter your password to be hashed: ")
-    hash256(plaintext)
+    filename = input("Enter the name of the file: ")
+    createfile(filename)
