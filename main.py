@@ -1,12 +1,12 @@
 ##PJ Frost
 ##Programming Assignment 5 (getpass)
-##10/19/2021
+##10/20/2021
 ##SEC.207
 import getpass
 
 def createfile(filename):
     username = getpass.getuser()
-    file = open(f'C:\\Users\\{username}\\Desktop\\PC {filename}.txt','w')
+    file = open(f'C:\\Users\\{username}\\Desktop\\{filename}.txt','w')
     text = input("Enter information into the file: ")
     file.write(text)
     file.close()
