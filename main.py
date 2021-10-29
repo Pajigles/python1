@@ -1,6 +1,6 @@
 ##PJ Frost
-##Programming Assignment 4
-##10/01/2021
+##Programming Assignment 6 Strings2
+##10/29/2021
 ##SEC.207
 import random
 
