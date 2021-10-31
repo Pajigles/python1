@@ -10,9 +10,14 @@ def function1(sentence):
 
 
 def function2(sentence):
+    for words in range(len(sentence)):
+        print(sentence[words])
+
 
 
 if __name__ == "__main__":
     print("Enter a sentence to be split:" )
     sentence =  input()
     function1(sentence)
+    print(" ")
+    function2(sentence)
