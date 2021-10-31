@@ -17,7 +17,7 @@ def function2(sentence):
 
 if __name__ == "__main__":
     print("Enter a sentence to be split:" )
-    sentence =  input()
+    sentence = input()
     function1(sentence)
     print(" ")
     function2(sentence)
