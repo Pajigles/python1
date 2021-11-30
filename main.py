@@ -1,36 +1,31 @@
 ##PJ Frost
-##Programming Assignment 7
-##11/04/2021
+##Programming Assignment 8
+##11/29/2021
 ##SEC.207
-import re
-import os
 
 
-def osname():
-    result = os.name
-    if re.match("nt", result):
-        print("This is a windows operating system")
-    if re.match("posix", result):
-        print("This is a mac or linux operating system")
+class Bird:
 
-def checkaccess():
-    result = os.access("/users/",os.F_OK)
-    result = str(result)
-    if re.search("True", result):
-        print("Access to C:/users is True")
-    else:
-        print("Access to C:/users is False")
+    attr1 = "flightless"
+    attr2 = "flying"
 
-def returncwd():
-    result = os.getcwd()
-    if re.fullmatch(r"C:\\Users\\PJ\\PycharmProjects\\python1", result):
-        print("This directory exists")
-    else:
-        print("This directory does not exist")
+    def __init__(self, name):
+        self.name = name
 
-if __name__ == '__main__':
-    osname()
-    print()
-    checkaccess()
-    print()
-    returncwd()
+    def lay_egg(self):
+        print("An egg was laid by {}".format(self.name))
+
+
+print("Enter name of first bird: ")
+inputone = input()
+
+print("Enter name of second bird: ")
+inputtwo = input()
+
+Bird1 = Bird(inputone)
+Bird2 = Bird(inputtwo)
+
+Bird1.lay_egg()
+Bird2.lay_egg()
+
+print(dir(Bird))
