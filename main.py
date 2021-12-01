@@ -6,8 +6,8 @@
 
 class Bird:
 
-    attr1 = "flightless"
-    attr2 = "flying"
+    mouth = "beak"
+    travelby = "flying"
 
     def __init__(self, name):
         self.name = name
@@ -28,4 +28,5 @@ Bird2 = Bird(inputtwo)
 Bird1.lay_egg()
 Bird2.lay_egg()
 
-print(dir(Bird))
+print(dir(Bird1))
+print(dir(Bird2))
